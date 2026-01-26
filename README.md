@@ -4,11 +4,6 @@ This code is licensed under the Apache License, Version 2.0
 If you are using this code, please cite:   
 R. Ouyang, S. Curtarolo, E. Ahmetcik, M. Scheffler, and L. M. Ghiringhelli, Phys. Rev. Mater. 2, 083802 (2018).  
 
-Key update in v3.5: Implementation of representing features in memory by S-expression tree.      
-In all previous versions, features are stored in memory by data. Now, user can choose which scheme to use by specifying fstore =1 (features stored by data) or fstore=2 ( features stored by expression tree) in SISSO.in. 'fstore=1' is fast but high
-memory demand; 'fstore=2' is low memory demand but could be several times slower than the former. Therefore, if you meet memory bottleneck because of large dataset (e.g. >5K), then set 'fstore=2'; otherwise, use 'fstore=1'. To give a feel on this, a performance comparison is shown in the SISSO_Guide.pdf at the introduction of the keyword 'fstore'.
-
-
 Features   
 --------
 - Regression & Classification    
@@ -68,12 +63,13 @@ More details on using this code can be found in the SISSO_guide.pdf
 About
 ------
 Created and maintained by Runhai Ouyang. Please feel free to open issues in the Github or contact Ouyang  
-(rouyang@shu.edu.cn) in case of any problems/comments/suggestions in using the code. 
+(rouyang@tongji.edu.cn) in case of any problems/comments/suggestions in using the code. 
 
 
 Other SISSO-related codes
 -------------------------
-SISSO++: https://gitlab.com/sissopp_developers/sissopp    
+SISSO++: https://gitlab.com/sissopp_developers/sissopp 
+TorchSISSO: https://github.com/PaulsonLab/TorchSISSO
 MATLAB: https://github.com/NREL/SISSORegressor_MATLAB  
 Python interface: https://github.com/Matgenix/pysisso  
 
